@@ -31,11 +31,10 @@ class Song
   
   def self.find_by_name(name)
     @@all.find{|song| song.name == name}
+     Song.new("Hello")
+      h_ello = self.find_by_name("Hello")
+      h_ello  
   end
-  
-  Song.new("Hello")
-  h_ello = self.find_by_name("Hello")
-  h_ello
   
   def self.find_or_create_by_name(name)
     self.find_by_name(name) || self.create_by_name(name)
