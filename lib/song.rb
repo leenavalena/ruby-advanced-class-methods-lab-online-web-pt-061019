@@ -34,6 +34,8 @@ class Song
   end
   
   Song.new("Hello")
+  h_ello = self.find_by_name("Hello")
+  
   
   def self.find_or_create_by_name(name)
     self.find_by_name(name) || self.create_by_name(name)
