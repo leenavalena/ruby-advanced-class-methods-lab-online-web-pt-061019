@@ -24,8 +24,8 @@ class Song
   end
   
   def self.create_by_name(name)
-    song = self.create
-    song.name = "Blank Space"
+    song = Song.new
+    song.name = name
     song
   end
   
